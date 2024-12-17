@@ -44,4 +44,29 @@ body {
     background-color: #343a40;
     color: white;
   }
-  
+  /* Footer estilizado */
+footer {
+  background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente de azul suave */
+  color: #f8f9fa;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #f1c40f; /* Amarelo suave */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f39c12; /* Amarelo mais intenso */
+  text-decoration: underline;
+}

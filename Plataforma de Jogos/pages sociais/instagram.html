@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram - GameStore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/pageslinks.css">
+  <link rel="shortcut icon" href="../favicon/control.webp" type="image/x-icon">
+  <style>
+    /* Adicionando um fundo do Instagram (branco com uma tonalidade suave) */
+    body {
+      background-color: #fafafa; /* Cor de fundo do Instagram */
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Header: Cor de fundo e estilização do título */
+    header {
+      background-color: #ffffff; /* Cor de fundo do Instagram */
+      border-bottom: 1px solid #dbdbdb; /* Borda fina, similar ao Instagram */
+      padding: 15px 0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: #262626;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Estilo para o conteúdo principal */
+    main {
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: #262626;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* Cada imagem será estilizada de forma a se alinhar com o Instagram */
+    .col-md-4 {
+      padding: 0 5px;
+    }
+
+    .img-fluid {
+      border-radius: 10px; /* Bordas arredondadas para as imagens */
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ffffff;
+      padding: 30px 0;
+      border-top: 1px solid #dbdbdb;
+      margin-top: 50px;
+    }
+
+    footer h5 {
+      font-weight: bold;
+      color: #262626;
+      margin-bottom: 15px;
+    }
+
+    footer a {
+      color: #0095f6; /* Cor dos links (Instagram azul) */
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Redes sociais */
+    footer .bi {
+      font-size: 1.5rem;
+      margin-right: 10px;
+      transition: color 0.3s ease;
+    }
+
+    footer .bi-facebook:hover {
+      color: #3b5998;
+    }
+
+    footer .bi-twitter:hover {
+      color: #1da1f2;
+    }
+
+    footer .bi-instagram:hover {
+      color: #e1306c;
+    }
+
+    .text-center {
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Instagram da GameStore</h1>
+    </div>
+  </header>
+
+  <main class="container mt-4">
+    <h1>GAMES EM PROMOÇÃO!!!</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="../images/elden.avif" class="img-fluid rounded mb-3" alt="Postagem 1">
+      </div>
+      <div class="col-md-4">
+        <img src="../images/cyberpunk2.jpg" class="img-fluid rounded mb-3" alt="Postagem 2">
+      </div>
+      <div class="col-md-4">
+        <img src="../images/rdr2.avif" class="img-fluid rounded mb-3" alt="Postagem 3">
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- Sobre Nós -->
+        <div class="col-md-4">
+          <h5>Sobre Nós</h5>
+          <p>A GameStore é uma plataforma dedicada aos gamers, oferecendo os melhores jogos e experiências digitais.</p>
+          <a href="../pages links/sobre nós.html" class="btn btn-outline-primary btn-sm mt-2">Saiba Mais</a>
+        </div>
+        <!-- Contato -->
+        <div class="col-md-4">
+          <h5>Contato</h5>
+          <ul class="list-unstyled">
+            <li>Email: suporte@gamestore.com</li>
+            <li>Telefone: (11) 1234-5678</li>
+          </ul>
+          <a href="../pages links/contato.html" class="btn btn-outline-primary btn-sm mt-2">Fale Conosco</a>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="col-md-4">
+          <h5>Redes Sociais</h5>
+          <a href="../pages sociais/facebook.html" class="text-dark me-3"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="../pages sociais/twitter.html" class="text-dark me-3"><i class="bi bi-twitter"></i> Twitter</a>
+          <a href="../pages sociais/instagram.html" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p class="mb-0">© 2024 GameStore. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

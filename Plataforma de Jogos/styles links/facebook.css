@@ -1,0 +1,127 @@
+/* Resetando margens e paddings padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definindo o corpo da página */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte parecida com a do Facebook */
+    background-color: #f0f2f5; /* Cor de fundo semelhante ao do Facebook */
+    color: #1c1e21; /* Cor do texto, mais escura, como no Facebook */
+  }
+  
+  /* Estilização do cabeçalho */
+  header {
+    background-color: #1877f2; /* Cor do fundo do cabeçalho, como o Facebook */
+    color: white;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Estilização do conteúdo principal */
+  main {
+    margin-top: 30px;
+  }
+  
+  /* Estilização das promoções e lançamentos */
+  .list-group-item {
+    background-color: white;
+    border: 1px solid #dddfe2; /* Borda leve para as seções de promoções */
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .list-group-item h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1877f2;
+  }
+  
+  .list-group-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Estilização do rodapé */
+  footer {
+    background-color: #242526; /* Cor de fundo do rodapé, mais escura */
+    color: white;
+  }
+  
+  footer .container {
+    padding: 30px;
+  }
+  
+  footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  footer a {
+    color: #d0d0d0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #1877f2; /* Cor do link no hover (Facebook blue) */
+  }
+  
+  /* Colunas no footer */
+  footer .row .col-md-4 {
+    margin-bottom: 20px;
+  }
+  
+  footer .list-unstyled li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Redes sociais */
+  footer .bi {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  footer .bi-facebook:hover {
+    color: #1877f2;
+  }
+  
+  footer .bi-twitter:hover {
+    color: #1da1f2;
+  }
+  
+  footer .bi-instagram:hover {
+    color: #e1306c;
+  }
+  
+  footer .text-center {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #ddd;
+  }
+  
+  /* Botões */
+  footer .btn-outline-light {
+    border-color: #dddfe2;
+    color: #dddfe2;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  footer .btn-outline-light:hover {
+    background-color: #dddfe2;
+    color: #1877f2;
+  }
+  

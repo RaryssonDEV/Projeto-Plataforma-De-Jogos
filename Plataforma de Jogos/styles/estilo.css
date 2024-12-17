@@ -14,17 +14,17 @@ header h1 {
   letter-spacing: 3px;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   font-family: 'Poppins', sans-serif; /* Fonte estilizada */
-  color: #ffcc00; /* Amarelo mais suave */
+  color: #f1c40f; /* Amarelo suave */
   animation: glow 1.5s infinite alternate;
 }
 
 /* Efeito de brilho no nome da loja */
 @keyframes glow {
   from {
-    text-shadow: 0 0 8px #ffcc00, 0 0 20px #ffcc00;
+    text-shadow: 0 0 8px #f1c40f, 0 0 20px #f1c40f;
   }
   to {
-    text-shadow: 0 0 12px #ffcc00, 0 0 25px #ffcc00;
+    text-shadow: 0 0 12px #f1c40f, 0 0 25px #f1c40f;
   }
 }
 
@@ -190,7 +190,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-  color: #ffeb3b; /* Cor amarela vibrante no hover */
+  color: #f1c40f; /* Cor amarela vibrante no hover */
   transform: scale(1.1); /* Efeito de ampliação */
   text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
@@ -216,7 +216,7 @@ footer {
 }
 
 footer a {
-  color: #ffeb3b; /* Cor amarela vibrante para os links */
+  color: #f1c40f; /* Cor amarela vibrante para os links */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -246,4 +246,36 @@ footer a:hover {
   footer {
     font-size: 0.9rem; /* Ajustando o tamanho da fonte do footer */
   }
+}
+.card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f39c12; /* Cor amarela suave */
+  margin-top: 10px;
+}
+/* Footer estilizado */
+footer {
+  background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente de azul suave */
+  color: #f8f9fa;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #f1c40f; /* Amarelo suave */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f39c12; /* Amarelo mais intenso */
+  text-decoration: underline;
 }
