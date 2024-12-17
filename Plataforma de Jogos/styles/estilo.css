@@ -1,0 +1,249 @@
+/* Header estilizado */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #5c8d8b, #396e6b); /* Gradiente mais suave e sóbrio */
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif; /* Fonte estilizada */
+  color: #ffcc00; /* Amarelo mais suave */
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Efeito de brilho no nome da loja */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 8px #ffcc00, 0 0 20px #ffcc00;
+  }
+  to {
+    text-shadow: 0 0 12px #ffcc00, 0 0 25px #ffcc00;
+  }
+}
+
+/* Carousel estilizado */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  filter: brightness(0.85) contrast(1.05); /* Ajuste para deixar as imagens mais suaves */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+/* Cartões com efeito moderno */
+.card {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Botões aprimorados */
+a.btn, .btn-favorite, .btn-cart {
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+a.btn {
+  background: linear-gradient(135deg, #f7b731, #f3a847); /* Gradiente laranja suave */
+}
+
+.btn-favorite {
+  background: linear-gradient(135deg, #ff7043, #e64a19); /* Gradiente laranja mais suave */
+}
+
+.btn-cart {
+  background: linear-gradient(135deg, #4db6ac, #26a69a); /* Gradiente verde suave */
+}
+
+a.btn:hover,
+.btn-favorite:hover,
+.btn-cart:hover {
+  transform: scale(1.1);
+  filter: brightness(0.9);
+  color: #fff;
+}
+
+/* Footer estilizado */
+footer {
+  background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente de azul suave */
+  color: #f8f9fa;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #f1c40f; /* Amarelo suave */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f39c12; /* Amarelo mais intenso */
+  text-decoration: underline;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-item img {
+    height: 400px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+/* Estilização geral do header e navegação */
+header {
+  background-color: #333; /* Cor de fundo escura para o cabeçalho */
+  color: #fff; /* Texto branco */
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #f8f9fa; /* Cor do texto dos links */
+  text-decoration: none; /* Remover sublinhado */
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ffeb3b; /* Cor amarela vibrante no hover */
+  transform: scale(1.1); /* Efeito de ampliação */
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilização do botão de login e carrinho */
+nav ul li a.nav-link {
+  font-weight: bold;
+}
+
+nav ul li a.nav-link:active {
+  color: #ff7e5f; /* Cor de fundo ativa quando o link for clicado */
+  transform: scale(1); /* Remove o efeito de ampliação após o clique */
+}
+
+/* Estilização do footer */
+footer {
+  background-color: #282828; /* Cor escura de fundo para o footer */
+  color: #f8f9fa; /* Texto branco */
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #ffeb3b; /* Cor amarela vibrante para os links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fbc02d; /* Amarelo mais suave no hover */
+  text-decoration: underline;
+}
+
+/* Responsividade para o header e navegação */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem; /* Diminuindo o tamanho da fonte para dispositivos móveis */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 1rem; /* Ajustando o tamanho da fonte para dispositivos móveis */
+  }
+
+  footer {
+    font-size: 0.9rem; /* Ajustando o tamanho da fonte do footer */
+  }
+}

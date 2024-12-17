@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameStore - Página Inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/estilo.css">
+</head>
+<body>
+  <!-- Menu de Navegação -->
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="mb-0">GameStore</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pages links/login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cart.html">Carrinho</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="favorites.html">Favoritos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mt-4">
+    <!-- Destaques -->
+    <section>
+      <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Cyberpunk.jpg" class="d-block w-100" alt="Destaque 1">
+            <div class="carousel-caption">
+              <h5>Cyberpunk 2077</h5>
+              <p>Explore Night City em um mundo aberto futurista.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/tlou2.avif" class="d-block w-100" alt="Destaque 2">
+            <div class="carousel-caption">
+              <h5>The Last Of Us Parte II Remastered</h5>
+              <p>Um jogo de ação e aventura que se passa em um mundo pós-apocalíptico. A história segue Ellie enquanto ela enfrenta desafios e lida com questões emocionais e morais em um ambiente perigoso.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Lista de Jogos -->
+    <section class="mt-5">
+      <h2>Jogos Populares</h2>
+      <div id="game-list" class="row">
+        <!-- Jogos serão carregados aqui dinamicamente -->
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

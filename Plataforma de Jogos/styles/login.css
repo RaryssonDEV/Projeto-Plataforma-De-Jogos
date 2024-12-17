@@ -1,0 +1,47 @@
+/* Estilo para a página de Login e Cadastro */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+  }
+  
