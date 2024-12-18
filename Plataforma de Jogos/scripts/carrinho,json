@@ -1,0 +1,4 @@
+[
+  { "name": "Cyberpunk 2077", "price": 199.99, "image": "images/cyberpunk2.jpg" },
+  { "name": "The Last of Us Part II", "price": 249.99, "image": "images/tlou2.avif" }
+]

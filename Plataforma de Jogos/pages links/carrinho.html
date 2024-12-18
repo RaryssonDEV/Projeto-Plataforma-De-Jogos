@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - GameStore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon/control.webp" type="image/x-icon">
+  <style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #3c3c3c; /* Fundo escuro harmonizado */
+    color: #f8f9fa; /* Texto claro para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #1b1e3d, #000000); /* Gradiente suave */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f1c40f; /* Amarelo suave */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif; /* Fonte estilizada */
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Efeito de brilho no nome da loja */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 8px #c9d4ec, 0 0 20px #c1bfd8;
+    }
+    to {
+        text-shadow: 0 0 12px #807e8a, 0 0 25px #7c7c81;
+    }
+}
+
+main {
+    min-height: 60vh;
+    padding: 20px;
+}
+
+#cartItems .card {
+    margin-bottom: 20px;
+    background: #2f2f2f; /* Fundo escuro para os cartões */
+    color: #f8f9fa;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cartItems .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+#cartItems .card img {
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente de azul suave */
+    color: #f8f9fa;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+footer a {
+    color: #f1c40f; /* Amarelo suave */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f39c12; /* Amarelo mais intenso */
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+
+  </style>
+</head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - GameStore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-dark text-white py-3">
+    <div class="container">
+      <h1>GameStore - Carrinho</h1>
+    </div>
+  </header>
+  <main class="container mt-5">
+    <h2 class="mb-4">Seu Carrinho</h2>
+    <div id="cart-items" class="row"></div>
+    <h4 id="total-price" class="mt-4">Total: R$ 0,00</h4>
+    <button id="finalizar-compra" class="btn btn-success mt-3">Finalizar Compra</button>
+  </main>
+ 
+<!-- Footer -->
+ <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Sobre Nós -->
+        <div class="col-md-4">
+          <h5>Sobre Nós</h5>
+          <p>A GameStore é uma plataforma dedicada aos gamers, oferecendo os melhores jogos e experiências digitais.</p>
+          <a href="sobre nós.html" class="btn btn-outline-light btn-sm mt-2">Saiba Mais</a>
+        </div>
+        <!-- Contato -->
+        <div class="col-md-4">
+          <h5>Contato</h5>
+          <ul class="list-unstyled">
+            <li>Email: suporte@gamestore.com</li>
+            <li>Telefone: (11) 1234-5678</li>
+          </ul>
+          <a href="contato.html" class="btn btn-outline-light btn-sm mt-2">Fale Conosco</a>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="col-md-4">
+          <h5>Redes Sociais</h5>
+          <a href="../pages sociais/facebook.html" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="../pages sociais/twitter.html" class="text-white me-3"><i class="bi bi-twitter"></i> Twitter</a>
+          <a href="../pages sociais/instagram.html" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p class="mb-0">© 2024 GameStore. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../scripts/carrinho.js"></script>
+  <script src="../scripts/carrinho,json"></script>
+</body>
+</html>

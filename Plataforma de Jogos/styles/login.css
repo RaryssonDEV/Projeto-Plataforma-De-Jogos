@@ -1,50 +1,76 @@
 /* Estilo para a página de Login e Cadastro */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5;
-  }
-  
-  header {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-control {
-    border-radius: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .btn {
-    border-radius: 30px;
-    font-weight: bold;
-    padding: 10px 20px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #343a40;
-    color: white;
-  }
-  /* Footer estilizado */
+  font-family: 'Poppins', sans-serif;
+  background-color: #3c3c3c; /* Fundo escuro harmonizado */
+  color: #f8f9fa; /* Texto claro para contraste */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(135deg, #1b1e3d, #000000); /* Gradiente principal */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f1c40f; /* Amarelo suave */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f8f9fa;
+  text-align: center;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.1); /* Fundo levemente translúcido */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.form-control {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  padding: 10px;
+  background: #2f2f2f; /* Fundo mais escuro */
+  color: #f8f9fa;
+}
+
+.form-control:focus {
+  border-color: #f1c40f;
+  box-shadow: 0 0 5px rgba(241, 196, 15, 0.5);
+  outline: none;
+}
+
+.btn {
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #4db6ac, #26a69a); /* Gradiente verde */
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #3d9187, #1e726e);
+  transform: scale(1.05);
+}
+
 footer {
   background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente de azul suave */
   color: #f8f9fa;
@@ -69,4 +95,23 @@ footer a {
 footer a:hover {
   color: #f39c12; /* Amarelo mais intenso */
   text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  form {
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  footer {
+      font-size: 0.9rem;
+  }
 }

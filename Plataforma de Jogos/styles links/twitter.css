@@ -1,138 +1,166 @@
 /* Resetando margens e paddings padrão do navegador */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo o corpo da página */
+body {
+  font-family: 'Poppins', sans-serif; /* Fonte estilizada */
+  background-color: #3c3c3c; /* Cor de fundo mais escura */
+  color: #f8f9fa; /* Cor do texto principal */
+}
+
+/* Estilização do cabeçalho */
+header {
+  background: linear-gradient(135deg, #1b1e3d, #000000); /* Gradiente suave e escuro */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 3rem; /* Tamanho maior para destaque */
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Sombra suave para destaque */
+  animation: glow 1.5s infinite alternate;
+  color: darkblue;
+}
+
+/* Efeito de brilho no nome da loja */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 8px #c9d4ec, 0 0 20px #c1bfd8;
   }
-  
-  /* Definindo o corpo da página */
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte similar à do Twitter */
-    background-color: #e1e8ed; /* Cor de fundo do Twitter */
-    color: #14171a; /* Cor do texto principal no Twitter */
+  to {
+    text-shadow: 0 0 12px #807e8a, 0 0 25px #7c7c81;
   }
-  
-  /* Estilização do cabeçalho */
-  header {
-    background-color: #1da1f2; /* Cor do cabeçalho (azul do Twitter) */
-    color: white;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  /* Estilização do conteúdo principal */
-  main {
-    margin-top: 30px;
-  }
-  
-  /* Estilização da lista de tweets */
-  .list-group-item {
-    background-color: white;
-    border: 1px solid #ccd6dd; /* Cor leve para a borda */
-    margin-bottom: 15px;
-    border-radius: 10px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .list-group-item p {
-    font-size: 1.2rem;
-    color: #14171a;
-  }
-  
-  .list-group-item strong {
-    font-weight: bold;
-  }
-  
-  .list-group-item a {
-    color: #1da1f2;
-    text-decoration: none;
-  }
-  
-  .list-group-item a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Estilização do rodapé */
-  footer {
-    background-color: #f7f9f9; /* Cor do fundo do rodapé */
-    color: #14171a;
-    padding: 30px;
-    border-top: 1px solid #ccd6dd;
-  }
-  
-  footer .container {
-    padding: 0;
-  }
-  
-  footer h5 {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  footer a {
-    color: #1da1f2;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
-    color: #14171a;
-  }
-  
-  /* Colunas no footer */
-  footer .row .col-md-4 {
-    margin-bottom: 20px;
-  }
-  
-  footer .list-unstyled li {
-    margin-bottom: 8px;
-    font-size: 1rem;
-  }
-  
-  /* Redes sociais */
-  footer .bi {
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-  }
-  
-  footer .bi-facebook:hover {
-    color: #3b5998;
-  }
-  
-  footer .bi-twitter:hover {
-    color: #1da1f2;
-  }
-  
-  footer .bi-instagram:hover {
-    color: #e1306c;
-  }
-  
-  footer .text-center {
-    font-size: 0.9rem;
-    margin-top: 20px;
-    color: #ddd;
-  }
-  
-  /* Botões */
-  footer .btn-outline-light {
-    border-color: #ccd6dd;
-    color: #ccd6dd;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-  }
-  
-  footer .btn-outline-light:hover {
-    background-color: #ccd6dd;
-    color: #1da1f2;
-  }
-  
+}
+
+/* Estilização do conteúdo principal */
+main {
+  margin-top: 30px;
+}
+
+/* Estilização da lista de tweets */
+.list-group-item {
+  background-color: #2c3e50; /* Cor de fundo escura e sóbria */
+  border: 1px solid #34495e; /* Borda escura */
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  transform: translateY(-8px); /* Efeito de elevação suave */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra ao passar o mouse */
+}
+
+.list-group-item p {
+  font-size: 1.2rem;
+  color: #f8f9fa; /* Cor do texto principal */
+}
+
+.list-group-item strong {
+  font-weight: bold;
+}
+
+.list-group-item a {
+  color: #f1c40f; /* Cor amarela suave dos links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.list-group-item a:hover {
+  color: #f39c12; /* Amarelo mais intenso no hover */
+  text-decoration: underline;
+}
+
+/* Estilização do rodapé */
+footer {
+  background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente de azul suave */
+  color: #f8f9fa;
+  padding: 30px;
+  border-top: 1px solid #ccd6dd; /* Borda suave no topo */
+  text-align: center;
+}
+
+footer .container {
+  padding: 0;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #f1c40f; /* Cor do link amarela */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f39c12; /* Cor amarela mais intensa no hover */
+  text-decoration: underline;
+}
+
+/* Colunas no footer */
+footer .row .col-md-4 {
+  margin-bottom: 20px;
+}
+
+footer .list-unstyled li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Redes sociais */
+footer .bi {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+footer .bi-facebook:hover {
+  color: #3b5998; /* Cor do Facebook */
+}
+
+footer .bi-twitter:hover {
+  color: #1da1f2; /* Cor do Twitter */
+}
+
+footer .bi-instagram:hover {
+  color: #e1306c; /* Cor do Instagram */
+}
+
+footer .text-center {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: #ddd; /* Cor sutil para o texto */
+}
+
+/* Botões */
+footer .btn-outline-light {
+  border-color: #ccd6dd;
+  color: #ccd6dd;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+footer .btn-outline-light:hover {
+  background-color: #ccd6dd;
+  color: #f1c40f; /* Cor do botão em hover */
+}

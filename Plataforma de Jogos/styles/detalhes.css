@@ -1,8 +1,8 @@
 /* Body para as páginas de detalhes */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9; /* Cor de fundo mais suave */
-    color: #444; /* Cor do texto mais neutra */
+    background-color: #3c3c3c; /* Cor de fundo harmonizada */
+    color: #f8f9fa; /* Cor do texto ajustada */
     padding: 0;
     margin: 0;
 }
@@ -10,7 +10,7 @@ body {
 /* Header para páginas de detalhes */
 header {
     text-align: center;
-    background: linear-gradient(135deg, #6a9fb5, #4a6d8c); /* Gradiente mais suave e elegante */
+    background: linear-gradient(135deg, #1b1e3d, #000000); /* Gradiente do estilo principal */
     color: #fff;
     padding: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -22,17 +22,17 @@ header h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-    color: #fff; /* Cor branca para o título */
+    color: darkblue;
     animation: glow 1.5s infinite alternate;
 }
 
 /* Efeito de brilho no nome do jogo */
 @keyframes glow {
     from {
-      text-shadow: 0 0 8px #fff, 0 0 20px #fff;
+        text-shadow: 0 0 8px #c9d4ec, 0 0 20px #c1bfd8;
     }
     to {
-      text-shadow: 0 0 12px #fff, 0 0 25px #fff;
+        text-shadow: 0 0 12px #807e8a, 0 0 25px #7c7c81;
     }
 }
 
@@ -41,6 +41,9 @@ header h1 {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo levemente translúcido */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Detalhes do jogo */
@@ -52,12 +55,12 @@ header h1 {
 .details-header h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #222; /* Cor de texto mais escura e suave */
+    color: #f39c12; /* Amarelo suave */
 }
 
 .details-header p {
     font-size: 1.2rem;
-    color: #666; /* Cor do texto de descrição mais neutra */
+    color: #f8f9fa; /* Cor do texto ajustada */
     font-style: italic;
     margin-top: 10px;
 }
@@ -90,7 +93,7 @@ header h1 {
 
 .trailer-container h3 {
     font-size: 2rem;
-    color: #333;
+    color: #f8f9fa;
     margin-top: 20px;
 }
 
@@ -101,35 +104,35 @@ header h1 {
     padding: 12px 20px;
     font-size: 1.2rem;
     color: #fff;
-    background: #5cb85c; /* Cor verde mais suave */
+    background: linear-gradient(135deg, #4db6ac, #26a69a); /* Gradiente verde do estilo principal */
     border: none;
     border-radius: 30px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-action:hover {
-    background: #4cae4c; /* Cor verde mais escura no hover */
+    background: linear-gradient(135deg, #3d9187, #1e726e);
     transform: scale(1.05);
 }
 
 .btn-action + .btn-action {
     margin-left: 20px;
-    background: #ff5722; /* Cor do botão "Favoritos" mais suave */
+    background: linear-gradient(135deg, #ff7043, #e64a19); /* Gradiente laranja */
 }
 
 .btn-action + .btn-action:hover {
-    background: #e64a19; /* Cor do botão "Favoritos" mais escura no hover */
+    background: linear-gradient(135deg, #e05533, #c43e16);
 }
 
 /* Footer */
 footer {
-    background: #2f3b42; /* Cor de fundo mais sóbria */
-    color: #f1f1f1; /* Cor do texto mais suave */
+    background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente de azul suave */
+    color: #f8f9fa;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     margin-top: 40px;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -141,14 +144,14 @@ footer p {
 }
 
 footer a {
-    color: #ffcc00; /* Cor amarela suave */
+    color: #f1c40f; /* Amarelo suave */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #ffeb3b; /* Amarelo mais vibrante */
+    color: #f39c12;
     text-decoration: underline;
 }
 
@@ -182,55 +185,29 @@ footer a:hover {
     padding: 12px 20px;
     font-size: 1.2rem;
     color: #fff;
-    background: #f44336; /* Cor vermelha suave */
+    background: linear-gradient(135deg, #f44336, #d32f2f); /* Gradiente vermelho */
     border: none;
     border-radius: 30px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: background 0.3s ease, transform 0.2s ease;
-    text-decoration: none; /* Remove underline do link */
+    transition: all 0.3s ease;
+    text-decoration: none;
     margin-top: 30px;
 }
 
 .btn-back:hover {
-    background: #e57373; /* Cor vermelha mais clara no hover */
-    transform: scale(1.05); /* Efeito de ampliação */
+    background: linear-gradient(135deg, #e57373, #d32f2f);
+    transform: scale(1.05);
 }
 
 .btn-back:active {
-    background: #d32f2f; /* Cor de fundo mais escura ao clicar */
-    transform: scale(1); /* Desfaz o efeito de ampliação ao clicar */
+    background: linear-gradient(135deg, #c62828, #b71c1c);
+    transform: scale(1);
 }
 
-/* Adicionando um ícone de seta para indicar a ação de "voltar" */
+/* Ícone no botão de voltar */
 .btn-back i {
     margin-right: 8px;
     font-size: 1.4rem;
 }
-/* Footer estilizado */
-footer {
-    background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente de azul suave */
-    color: #f8f9fa;
-    text-align: center;
-    padding: 15px;
-    font-size: 1rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  footer p {
-    margin: 0;
-    letter-spacing: 1px;
-  }
-  
-  footer a {
-    color: #f1c40f; /* Amarelo suave */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
-    color: #f39c12; /* Amarelo mais intenso */
-    text-decoration: underline;
-  }

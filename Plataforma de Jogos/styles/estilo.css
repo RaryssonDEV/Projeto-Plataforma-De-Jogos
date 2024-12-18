@@ -1,10 +1,13 @@
 /* Header estilizado */
 header {
   text-align: center;
-  background: linear-gradient(135deg, #5c8d8b, #396e6b); /* Gradiente mais suave e sóbrio */
+  background: linear-gradient(135deg, #1b1e3d, #000000); /* Gradiente mais suave e sóbrio */
   color: #fff;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+body{
+  background-color: #3c3c3c;
 }
 
 header h1 {
@@ -14,17 +17,17 @@ header h1 {
   letter-spacing: 3px;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   font-family: 'Poppins', sans-serif; /* Fonte estilizada */
-  color: #f1c40f; /* Amarelo suave */
+  color:darkblue;
   animation: glow 1.5s infinite alternate;
 }
 
 /* Efeito de brilho no nome da loja */
 @keyframes glow {
   from {
-    text-shadow: 0 0 8px #f1c40f, 0 0 20px #f1c40f;
+    text-shadow: 0 0 8px #c9d4ec, 0 0 20px #c1bfd8;
   }
   to {
-    text-shadow: 0 0 12px #f1c40f, 0 0 25px #f1c40f;
+    text-shadow: 0 0 12px #807e8a, 0 0 25px #7c7c81;
   }
 }
 
@@ -41,6 +44,7 @@ header h1 {
   height: 800px;
   object-fit: cover;
   filter: brightness(0.85) contrast(1.05); /* Ajuste para deixar as imagens mais suaves */
+  border-radius: 10px;
 }
 
 .carousel-control-prev-icon,
