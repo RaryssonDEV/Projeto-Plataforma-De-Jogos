@@ -1,28 +1,30 @@
-// Função para verificar se o login é válido
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Evita o envio do formulário
+// Login Script
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
 
-  // Obtendo os valores dos campos
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+  // Exemplo simples de verificação
+  if (email === "usuario@coresdobrasil.com" && senha === "senha123") {
+      alert("Login bem-sucedido!");
+      window.location.href = "index.html"; 
+  } else {
+      alert("E-mail ou senha incorretos. Tente novamente.");
+  }
+});
 
-  // Buscando usuários no arquivo JSON (simulado como uma variável)
-  fetch('usuarios.json')
-    .then(response => response.json())
-    .then(data => {
-      const user = data.users.find(user => user.username === username && user.password === password);
+// Cadastro Script
+document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
+  const cpf = document.getElementById("cpf").value;
+  const nascimento = document.getElementById("nascimento").value;
 
-      if (user) {
-        // Se o login for bem-sucedido, redireciona para a página principal
-        alert('Login bem-sucedido!');
-        window.location.href = "index.html";  // Página principal após login bem-sucedido
-      } else {
-        // Caso contrário, exibe uma mensagem de erro
-        alert('Usuário ou senha inválidos.');
-      }
-    })
-    .catch(error => {
-      console.error('Erro ao carregar os usuários:', error);
-      alert('Erro ao verificar o login. Tente novamente mais tarde.');
-    });
+  // Salvar dados ou enviar para o servidor
+  alert("Cadastro bem-sucedido! Agora você pode fazer login.");
+  window.location.href = "login.html";  // Redirecionar para a página de login
 });
