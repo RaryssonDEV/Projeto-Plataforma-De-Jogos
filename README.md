@@ -1,3 +1,3 @@
 # Projeto-Plataforma-De-Jogos
-Projeto voltado para o desenvolvimento e aprendizado 
+Projeto voltado para o desenvolvimento e aprendizado. 
 Projeto ainda em desenvolvimento...
